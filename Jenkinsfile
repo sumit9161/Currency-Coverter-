@@ -12,10 +12,10 @@ pipeline {
 
   stages {
     stage('Checkout') {
-      steps {
-        git branch: 'main', url: 'https://github.com/sumit9161/Currency-Coverter.git'
-      }
-    }
+  steps {
+    git branch: 'main', credentialsId: 'github-token', url: 'https://github.com/sumit9161/Currency-Coverter-.git'
+  }
+}
 
     stage('Install') {
       steps {
